@@ -1,0 +1,15 @@
+There are several types of file modes
+1.Append Mode(ios::app)
+In append mode,if the file exists already,the cursor goes to the end of the file and we can add more content to the file without overwriting it.If the file does not exist already,a new file is created
+2.Update Mode(ios::ate)
+In update mode,by default the cursor moves to the end of the file if the file exists.We can add on the already existing content.But, unlike append mode,if the file does not exist,a new file is not created
+3.Binary Mode(ios::binary)
+Normally,when we open a file,it is opened in text mode.But if we open a file in binary mode,then the text is converted into binary form and we can read and write in this file
+4.in mode(ios::in)
+This is the default mode in ifstream.we can only read from a file using this mode.If the files does not exist already,it is not created and the open function fails.
+5.out mode(ios::out)
+It is the default mode of ofstream mode.If the file already exists,it is overwritten.If the file does not exist already,it is created
+6.NoReplace Mode(ios::noreplace)
+In this mode,if the file is already existing then ,the open function will fail and the file will not open.
+7.NoCreated Method(ios::nocreate)
+In this mode,if the file does not exist already,the open function will fail and no new file will be created.
